@@ -1,0 +1,15 @@
+.category {
+  @apply flex items-center justify-center p-10 w-full h-full rounded-2xl min-h-[200px] cursor-pointer;
+
+  &--primary {
+    @apply bg-primary-500;
+  }
+
+  &--secondary {
+    @apply bg-secondary-500;
+  }
+
+  &__title {
+    @apply text-white text-2xl font-bold;
+  }
+}

@@ -1,0 +1,43 @@
+.product {
+  @apply h-auto w-full rounded-2xl flex flex-col gap-2 bg-white shadow-md;
+
+  &__inner {
+    @apply flex flex-col gap-3 items-center px-10 py-5;
+  }
+
+  &__title {
+    @apply text-sm font-bold text-black text-center;
+  }
+
+  &__image {
+    @apply object-contain overflow-hidden;
+    width: 215px;
+    height: 200px;
+  }
+
+  &__category {
+    @apply bg-primary-500 w-full h-auto rounded-2xl mt-auto flex flex-col gap-1 py-3 items-center;
+
+    &--men {
+      @apply bg-primary-500;
+    }
+
+    &--women {
+      @apply bg-secondary-500;
+    }
+  }
+
+  &__price {
+    @apply text-sm font-bold text-center;
+    color: #0e42fd;
+  }
+
+  &__description {
+    @apply text-black text-xs max-w-[180px] text-center;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Limits text to 4 lines */
+    -webkit-box-orient: vertical; /* Sets the direction of the lines */
+    overflow: hidden; /* Hides any content that overflows */
+    text-overflow: ellipsis; /* Adds the ellipsis (...) at the end */
+  }
+}

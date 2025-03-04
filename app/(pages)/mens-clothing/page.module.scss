@@ -1,0 +1,23 @@
+.men {
+  @apply flex flex-col gap-8 py-10;
+
+  &__inner {
+    @apply flex flex-col gap-4 containers;
+  }
+
+  &__title {
+    @apply text-2xl font-bold text-black;
+  }
+
+  &__products {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5;
+  }
+
+  &__alert {
+    @apply col-span-full text-center py-10;
+  }
+
+  &__message {
+    @apply text-lg font-medium text-gray-500;
+  }
+}
